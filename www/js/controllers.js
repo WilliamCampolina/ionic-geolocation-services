@@ -48,8 +48,8 @@ angular.module('starter.controllers', [])
                         }
                     }
 
-                    var url = "http://authidro.com.br/webServiceSmartHidro/app/index.php/savetest";
-                    //var url = "http://mydomain.com.br/webService/save";
+                   
+                    var url = "http://mydomain.com.br/webService/save";
 
                     var paramSerializado = dados;
                     $http({
@@ -122,7 +122,7 @@ angular.module('starter.controllers', [])
 
                 bgLocationServices.configure({
                     //Both
-                    desiredAccuracy: 5, // Desired Accuracy of the location updates (lower means more accurate but more battery consumption)
+                    desiredAccuracy: 10, // Desired Accuracy of the location updates (lower means more accurate but more battery consumption)
                     distanceFilter: 5, // (Meters) How far you must move from the last point to trigger a location update
                     debug: false, // <-- Enable to show visual indications when you receive a background location update
                     interval: 5000, // (Milliseconds) Requested Interval in between location updates.
